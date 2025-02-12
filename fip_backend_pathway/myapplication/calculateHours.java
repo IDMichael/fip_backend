@@ -7,6 +7,7 @@ interface TimeCalculator {
 // Implement the interface in a class
 class HoursInDay implements TimeCalculator {
     // Implement method to return total hours in a day
+    @Override
     public int getTotalHoursInDay() {
         return 24; // A standard day has 24 hours
     }
@@ -21,7 +22,7 @@ class HoursInDay implements TimeCalculator {
 // Main class to test the implementation
 public class calculateHours {
     public static void main(String[] args) {
-        HoursInDay hours = new HoursInDay();
+        TimeCalculator hours = new HoursInDay();
         hours.displayHours(); // Display the number of hours in a day
     }
 }
