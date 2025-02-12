@@ -15,7 +15,8 @@ class HoursInDay implements TimeCalculator {
     // Implement method to display hours
     @Override
     public void displayHours() {
-        System.out.println("There are " + getTotalHoursInDay() + " hours in a day.");
+        int hours = getTotalHoursInDay(); // Ensure the method is used
+        System.out.println("There are " + hours + " hours in a day.");
     }
 }
 
@@ -23,6 +24,7 @@ class HoursInDay implements TimeCalculator {
 public class calculateHours {
     public static void main(String[] args) {
         TimeCalculator hours = new HoursInDay();
+        System.out.println("Total hours in a day: " + hours.getTotalHoursInDay()); // Explicitly using the method
         hours.displayHours(); // Display the number of hours in a day
     }
 }
