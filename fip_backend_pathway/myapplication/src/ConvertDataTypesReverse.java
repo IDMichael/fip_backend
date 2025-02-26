@@ -1,4 +1,4 @@
-public class ConvertDataTypeReverse {
+public class ConvertDataTypesReverse {
     public static void main(String[] args) {
         try {
             // Program 1: Convert Numbers to Strings and Back to Numbers
